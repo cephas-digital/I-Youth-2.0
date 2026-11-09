@@ -2,6 +2,9 @@
 
 A responsive React and TypeScript user interface concept for the Project Data Measurement and Learning System (PDMALS) described in IITA RFP/Q VSM 10/2026.
 
+
+fix the double scroll view in this page and also make the page wideness to be like other pages..
+
 ## Run locally
 
 ```sh
@@ -22,6 +25,8 @@ See [requirements coverage](docs/requirements-coverage.md) for the mapping from 
 ## Workspace routes
 
 Each primary workspace has a direct URL. The app supports browser back and forward navigation and normalizes `/` to `/overview`.
+
+Participant profiles use nested routes in the form `/participants/{participantId}` and return to `/participants` from the profile page.
 
 - `/overview`
 - `/participants`
