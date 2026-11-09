@@ -51,7 +51,9 @@ The top-right **View as role** selector previews each persona. Navigation is sco
 
 The page uses a calm agricultural green palette, warm off-white surfaces, compact data tables, clear status labels and a farm photograph. The live IITA homepage and the official DHIS2 analytics and KoBoToolbox collection documentation were reviewed for visual and workflow references. DM Sans and Manrope are used as close web-font choices; the public IITA page did not expose a verifiable institutional typeface in the reviewed sources, so these are not represented as exact IITA brand fonts.
 
-Navigation, selectors, filters, dialogs, form validation, profile actions, quick actions, pagination, dashboard save, CSV generation and notifications are connected as client-side prototype interactions. They do not persist to a server.
+The 14 primary workspaces have direct routes with browser history support. Navigation, selectors, filters, quick actions, form validation, profile actions, dashboard save, CSV generation and notifications are connected as client-side prototype interactions. MERL and Reports include period snapshot/lock context and export lineage; indicator setup captures definition, baseline, target, source, frequency, owner, disaggregation and calculation; exception follow-up captures an owner, due date, status and closure note; evidence upload captures a local filename and access classification. These remain prototype interactions and do not persist to a server.
+
+The overview uses a locally stored AI-generated documentary-style agriculture image rather than a remote stock-photo URL, so the image loads consistently without a third-party image request. Motion is limited to gentle page/card entry and hover transitions, with reduced-motion preferences respected.
 
 ## Known mockup limits
 
@@ -59,4 +61,5 @@ Navigation, selectors, filters, dialogs, form validation, profile actions, quick
 - Authentication, MFA, field-level permissions, server-side audit immutability, consent retention, data-subject requests and sensitive-cell suppression need implementation and UAT against the real access model.
 - Offline encryption, queued synchronization and conflict resolution need a field data layer; this interface only shows sync state and pending work.
 - APIs, SMS/email delivery, GIS boundaries and precise-location controls, BI connections, scheduled exports, backups, disaster recovery and data migration need service integration.
-- Forms currently demonstrate interaction; each form type still needs its own RFP-aligned field schema and workflow.
+- Forms currently demonstrate interaction; remaining form types still need their complete RFP-aligned field schemas and workflow.
+- Generated photography is illustrative and does not depict verified IITA participants, locations, or activities.
